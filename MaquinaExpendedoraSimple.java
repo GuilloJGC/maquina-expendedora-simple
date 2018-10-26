@@ -34,6 +34,9 @@ public class MaquinaExpendedoraSimple {
     public void setPrecioBillete(int precioBillete){
         this.precioBillete = precioBillete;
     }
+    public void reducirPrecioBillete(int reduccion){
+        this.precioBillete = precioBillete - reduccion;
+    }
     /**
      * Devuelve el precio del billete
      */
