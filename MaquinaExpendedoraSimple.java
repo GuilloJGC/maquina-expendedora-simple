@@ -31,12 +31,15 @@ public class MaquinaExpendedoraSimple {
         estacionOrigen = "Leon";
         estacionDestino = destino;
     }
+    
     public void setPrecioBillete(int precioBillete){
         this.precioBillete = precioBillete;
     }
+    
     public void reducirPrecioBillete(int reduccion){
         this.precioBillete = precioBillete - reduccion;
     }
+    
     /**
      * Devuelve el precio del billete
      */
@@ -58,8 +61,12 @@ public class MaquinaExpendedoraSimple {
         balanceClienteActual = balanceClienteActual + cantidadIntroducida;
     }
     
-    public int getBalance (){
-        return balanceClienteActual;
+    public void vaciarDeposito() {
+        balanceClienteActual = 0;
+    }
+    
+    public int getTotalDineroAcumulado (){
+        return totalDineroAcumulado;
     }
 
     /**
